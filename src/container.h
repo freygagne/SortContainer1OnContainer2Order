@@ -12,14 +12,14 @@
 //
 // Reference documents
 //   <Include here the documentation external to the project> 
-//   containing helpful information to understand the implementation: algorithms, design patterns, …>
+//   containing helpful information to understand the implementation: algorithms, design patterns, â€¦>
 //
 // File revision history: 1.0
 // Date                 : 26 March 2018
-// Author               : François Reygagne
+// Author               : FranÃ§ois Reygagne
 // Copyright            :
 //=================================================================
-#pragma once 
+
 
 #ifndef _CONTAINER_H_
 #define _CONTAINER_H_
