@@ -1,6 +1,7 @@
 Prerequisite:
-1) cmake-3.11.0-rc3-win64-x64
-2) Visual Studio 15 2017 Community Edition  C++ version 11
+1) cmake
+2) Visual Studio Community Edition  C++
+for me this is Visual Studio 15 2017 but you can use the latest version e.g. 2019
 
 Unzip the container.zip archive file to your favorite directory
 
@@ -23,7 +24,7 @@ I'm used to work on a virtual disk drive o:
    cd CONTAINER
    
 6) Generate your solution
-O:\> C:\cmake-3.11.0-rc3-win64-x64\bin\cmake.exe -G "Visual Studio 15 2017"
+O:\> cmake -G "Visual Studio 15 2017"
 -- Selecting Windows SDK version 10.0.16299.0 to target Windows 6.1.7601.
 -- The C compiler identification is MSVC 19.13.26128.0
 -- The CXX compiler identification is MSVC 19.13.26128.0
@@ -39,7 +40,7 @@ O:\> C:\cmake-3.11.0-rc3-win64-x64\bin\cmake.exe -G "Visual Studio 15 2017"
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/RTC_WORKSPACE/TEST_C++/MATRIX2D
+-- Build files have been written 
 o:>
 
 7) open the created visual studio solution ProjectContainer.sln
@@ -54,8 +55,23 @@ o:>
 
 11) Run in debug mode the ProjectContainer executable
    - Select from Solution Explorer the dongle executable_container
+   - Right Click and then select from the menu scroll bar <Set as Startup Project>
    - Right Click and then select debug
    
-12)Add a watch window and select myContainer1 and myContainer2
-and you can see from the vector contents that the sort is done successfully
+12) From the debugger console you must see the two vector contents 
+Container1 and Container2 that the sort is done successfully
+(see the task 3: Coding 2 description)!
+
+ Container2 sorted with position
+   position= 2 Value=1
+   position= 0 Value=4
+   position= 1 Value=7
+
+ Container1 sorted according sorted position of Container2
+   position= 0 Value=c
+   position= 1 Value=a
+   position= 2 Value=b  
+   
+13)Add a watch window and select myContainer1 and myContainer2
+and you can see also from the vector contents that the sort is done successfully
 for the two containers as expected (see the task 3: Coding 2 description)!
